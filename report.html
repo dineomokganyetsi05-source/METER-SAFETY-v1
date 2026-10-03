@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report a Ride | Meter Safety</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <div class="logo">
+            METER SAFETY
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Check a Driver</a>
+            <a href="report.html">Report a Ride</a>
+            <a href="locations.html">Locations</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <p class="tagline">
+            SHARE YOUR EXPERIENCE
+        </p>
+
+        <h1>Report a Ride</h1>
+
+        <p>
+            Help other passengers make informed decisions
+            by sharing your ride experience.
+        </p>
+
+    </section>
+
+
+    <!-- Report Form -->
+
+    <main class="report-page">
+
+        <section class="report-box">
+
+            <h2>Ride Information</h2>
+
+            <p class="form-intro">
+                Please provide accurate information about
+                your experience.
+            </p>
+
+
+            <form id="reportForm">
+
+                <!-- Platform -->
+
+                <label for="reportPlatform">
+                    Ride Platform
+                </label>
+
+                <select id="reportPlatform" required>
+
+                    <option value="">
+                        Select platform
+                    </option>
+
+                    <option value="Uber">
+                        Uber
+                    </option>
+
+                    <option value="Bolt">
+                        Bolt
+                    </option>
+
+                </select>
+
+
+                <!-- Driver -->
+
+                <label for="reportDriver">
+                    Driver Name / Identifier
+                </label>
+
+                <input
+                    type="text"
+                    id="reportDriver"
+                    placeholder="Enter information shown on the app"
+                    required
+                >
+
+
+                <!-- Vehicle -->
+
+                <label for="reportVehicleMake">
+    Vehicle Make
+</label>
+
+<input
+    type="text"
+    id="reportVehicleMake"
+    placeholder="Example: Toyota"
+    required
+>
+
+
+<label for="reportVehicleModel">
+    Vehicle Model
+</label>
+
+<input
+    type="text"
+    id="reportVehicleModel"
+    placeholder="Example: Corolla"
+    required
+>
+
+
+                <!-- Registration -->
+
+                <label for="reportRegistration">
+                    Vehicle Registration
+                </label>
+
+                <input
+                    type="text"
+                    id="reportRegistration"
+                    placeholder="Enter registration"
+                    required
+                >
+
+
+                <!-- Province -->
+
+                <label for="reportProvince">
+                    Province
+                </label>
+
+                <select id="reportProvince" required>
+
+                    <option value="">
+                        Select province
+                    </option>
+
+                    <option>Gauteng</option>
+                    <option>Western Cape</option>
+                    <option>KwaZulu-Natal</option>
+                    <option>Eastern Cape</option>
+                    <option>Free State</option>
+                    <option>Limpopo</option>
+                    <option>Mpumalanga</option>
+                    <option>North West</option>
+                    <option>Northern Cape</option>
+
+                </select>
+
+
+                <!-- City -->
+
+                <label for="reportCity">
+                    City / Town
+                </label>
+
+                <input
+                    type="text"
+                    id="reportCity"
+                    placeholder="Example: Benoni"
+                    required
+                >
+
+
+                <!-- Vehicle Colour -->
+
+                <label for="vehicleColour">
+                    Vehicle Colour
+                </label>
+
+                <input
+                    type="text"
+                    id="vehicleColour"
+                    placeholder="Example: White"
+                >
+
+
+                <!-- Incident -->
+
+                <label for="incidentType">
+                    Type of Incident
+                </label>
+
+                <select id="incidentType" required>
+
+                    <option value="">
+                        Select incident type
+                    </option>
+
+                    <option>
+                        Unsafe driving
+                    </option>
+
+                    <option>
+                        Harassment
+                    </option>
+
+                    <option>
+                        Threatening behaviour
+                    </option>
+
+                    <option>
+                        Wrong route / unexpected route
+                    </option>
+
+                    <option>
+                        Vehicle did not match the app
+                    </option>
+
+                    <option>
+                        Driver identity concern
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
+
+
+                <!-- Description -->
+
+                <label for="incidentDescription">
+                    Describe Your Experience
+                </label>
+
+                <textarea
+                    id="incidentDescription"
+                    rows="7"
+                    placeholder="Please describe what happened. Stick to factual details."
+                    required
+                ></textarea>
+
+
+                <!-- Evidence -->
+
+                <label for="evidence">
+                    Supporting Image (Optional)
+                </label>
+
+                <input
+                    type="file"
+                    id="evidence"
+                    accept="image/*"
+                >
+
+                <p class="upload-note">
+                    Only upload images you have the right
+                    to share. Avoid uploading unnecessary
+                    personal information.
+                </p>
+
+
+                <!-- Confirmation -->
+
+                <div class="report-confirmation">
+
+                    <input
+                        type="checkbox"
+                        id="truthfulReport"
+                        required
+                    >
+
+                    <label for="truthfulReport">
+                        I confirm that this report is based
+                        on my own experience and that the
+                        information I have provided is
+                        accurate to the best of my knowledge.
+                    </label>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="submit-report"
+                >
+                    SUBMIT REPORT
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Meter Safety. All rights reserved.
+        </p>
+
+        <p>
+            Community-powered ride safety information.
+        </p>
+
+    </footer>
+
+
+    <script src="data/reports.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

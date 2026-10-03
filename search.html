@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Check a Driver | Meter Safety</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <div class="logo">
+            METER SAFETY
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Check a Driver</a>
+            <a href="report.html">Report a Ride</a>
+            <a href="locations.html">Locations</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <p class="tagline">
+            METER SAFETY
+        </p>
+
+        <h1>Check a Driver</h1>
+
+        <p>
+            Search available community safety information
+            before entering your ride.
+        </p>
+
+    </section>
+
+
+    <!-- Search Area -->
+
+    <main class="search-page">
+
+        <section class="search-box">
+
+            <h2>Search Ride Information</h2>
+
+            <p>
+                Enter the information shown on your Uber or
+                Bolt ride.
+            </p>
+
+
+            <form id="driverSearchForm">
+
+                <label for="platform">
+                    Ride Platform
+                </label>
+
+                <select id="platform" required>
+
+                    <option value="">
+                        Select platform
+                    </option>
+
+                    <option value="Uber">
+                        Uber
+                    </option>
+
+                    <option value="Bolt">
+                        Bolt
+                    </option>
+
+                </select>
+
+
+                <label for="driver">
+                    Driver Name or Identifier
+                </label>
+
+                <input
+                    type="text"
+                    id="driver"
+                    placeholder="Enter driver information"
+                >
+
+
+                <label for="vehicle">
+                    Vehicle Make and Model
+                </label>
+
+                <input
+                    type="text"
+                    id="vehicle"
+                    placeholder="Example: Toyota Corolla"
+                >
+
+
+                <label for="registration">
+                    Vehicle Registration
+                </label>
+
+                <input
+                    type="text"
+                    id="registration"
+                    placeholder="Enter registration"
+                >
+
+
+                <label for="province">
+                    Province
+                </label>
+
+                <select id="province" required>
+
+                    <option value="">
+                        Select province
+                    </option>
+
+                    <option>Gauteng</option>
+                    <option>Western Cape</option>
+                    <option>KwaZulu-Natal</option>
+                    <option>Eastern Cape</option>
+                    <option>Free State</option>
+                    <option>Limpopo</option>
+                    <option>Mpumalanga</option>
+                    <option>North West</option>
+                    <option>Northern Cape</option>
+
+                </select>
+
+
+                <label for="city">
+                    City / Town
+                </label>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Example: Benoni"
+                >
+
+
+                <button type="submit" class="search-button">
+                    CHECK DRIVER
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Results -->
+
+        <section
+            id="searchResults"
+            class="search-results"
+        >
+
+            <h2>Search Results</h2>
+
+            <p>
+                Enter ride information above to view
+                available safety reports.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Meter Safety. All rights reserved.
+        </p>
+
+        <p>
+            Community-powered ride safety information.
+        </p>
+
+    </footer>
+
+
+    <script src="data/reports.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
+/* =========================================
+   CHECK A DRIVER PAGE
+   ========================================= */
+
+.page-header {
+    padding: 80px 7%;
+    background-color: #171717;
+    color: white;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p:last-child {
+    color: #cccccc;
+}
+
+
+/* Search page */
+
+.search-page {
+    padding: 70px 7%;
+    background-color: #f7f6f3;
+}
+
+
+.search-box {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e4e1dc;
+}
+
+
+.search-box h2 {
+    margin-bottom: 10px;
+}
+
+.search-box > p {
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+#driverSearchForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#driverSearchForm label {
+    margin-top: 18px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+#driverSearchForm input,
+#driverSearchForm select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px;
+
+    font-size: 1rem;
+
+    background-color: white;
+}
+
+
+#driverSearchForm input:focus,
+#driverSearchForm select:focus {
+    outline: none;
+
+    border-color: #d7b98e;
+}
+
+
+.search-button {
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #171717;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.search-button:hover {
+    background-color: #d7b98e;
+    color: #171717;
+}
+
+
+/* Results */
+
+.search-results {
+    max-width: 700px;
+
+    margin: 40px auto 0;
+
+    padding: 35px;
+
+    background-color: #e9e4dc;
+
+    border-radius: 8px;
+}
+
+
+.search-results h2 {
+    margin-bottom: 10px;
+}

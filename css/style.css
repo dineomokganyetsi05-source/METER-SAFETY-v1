@@ -1,0 +1,923 @@
+/* =========================================
+   METER SAFETY - MAIN STYLES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f6f3;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 7%;
+
+    background-color: #171717;
+    color: white;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d7b98e;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.78),
+            rgba(20, 20, 20, 0.78)
+        ),
+        url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.tagline {
+    color: #d7b98e;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #eeeeee;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background-color: #d7b98e;
+    color: #171717;
+}
+
+.primary:hover {
+    background-color: #c5a576;
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background-color: white;
+    color: #171717;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+   ========================================= */
+
+.how-it-works {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.how-it-works h2,
+.locations-preview h2,
+.safety-notice h2 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    color: #666666;
+    margin-bottom: 50px;
+}
+
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.feature-card {
+    background-color: white;
+
+    padding: 35px;
+
+    width: 30%;
+
+    min-height: 230px;
+
+    text-align: left;
+
+    border: 1px solid #e4e1dc;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-number {
+    color: #d7b98e;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.feature-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.4rem;
+}
+
+
+/* =========================================
+   LOCATIONS
+   ========================================= */
+
+.locations-preview {
+    padding: 90px 7%;
+    text-align: center;
+
+    background-color: #e9e4dc;
+}
+
+.locations-preview p {
+    margin-bottom: 30px;
+    color: #555555;
+}
+
+
+/* =========================================
+   SAFETY NOTICE
+   ========================================= */
+
+.safety-notice {
+    padding: 70px 7%;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+}
+
+.safety-notice p {
+    max-width: 750px;
+    margin: auto;
+    color: #cccccc;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 30px 7%;
+
+    text-align: center;
+
+    background-color: #101010;
+
+    color: #999999;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+/* =========================================
+   REPORT A RIDE PAGE
+   ========================================= */
+
+.report-page {
+    padding: 70px 7%;
+    background-color: #f7f6f3;
+}
+
+
+.report-box {
+    max-width: 750px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e4e1dc;
+}
+
+
+.report-box h2 {
+    margin-bottom: 10px;
+}
+
+
+.form-intro {
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+
+#reportForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#reportForm label {
+    margin-top: 18px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+#reportForm input[type="text"],
+#reportForm input[type="file"],
+#reportForm select,
+#reportForm textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1rem;
+
+    background-color: white;
+}
+
+
+#reportForm textarea {
+    resize: vertical;
+}
+
+
+#reportForm input:focus,
+#reportForm select:focus,
+#reportForm textarea:focus {
+    outline: none;
+
+    border-color: #d7b98e;
+}
+
+
+.upload-note {
+    margin-top: 8px;
+
+    font-size: 0.85rem;
+
+    color: #777777;
+}
+
+
+.report-confirmation {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding: 18px;
+
+    background-color: #f7f6f3;
+
+    border-radius: 5px;
+}
+
+
+.report-confirmation input {
+    margin-top: 5px;
+}
+
+
+.report-confirmation label {
+    margin: 0 !important;
+
+    font-weight: normal !important;
+
+    font-size: 0.9rem;
+}
+
+
+.submit-report {
+    margin-top: 30px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #171717;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.submit-report:hover {
+    background-color: #d7b98e;
+
+    color: #171717;
+}
+
+/* =========================================
+   LOCATIONS PAGE
+   ========================================= */
+
+.locations-page {
+    padding: 70px 7%;
+    background-color: #f7f6f3;
+}
+
+
+.province-section {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.province-section h2 {
+    font-size: 2.4rem;
+}
+
+
+.location-intro {
+    color: #666666;
+    margin-bottom: 45px;
+}
+
+
+.province-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    text-align: left;
+}
+
+
+.province-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #e4e1dc;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.province-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.province-card h3 {
+    font-size: 1.4rem;
+
+    margin-bottom: 12px;
+}
+
+
+.province-card p {
+    color: #666666;
+
+    min-height: 70px;
+}
+
+
+.location-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #171717;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.location-link:hover {
+    color: #b18d5c;
+}
+
+
+/* Location search */
+
+.location-search {
+    max-width: 700px;
+
+    margin: 80px auto 0;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background-color: #e9e4dc;
+
+    border-radius: 8px;
+}
+
+
+.location-search h2 {
+    margin-bottom: 10px;
+}
+
+
+.location-search p {
+    color: #666666;
+}
+
+
+.location-search-box {
+    display: flex;
+
+    margin-top: 25px;
+}
+
+
+.location-search-box input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px 0 0 4px;
+
+    font-size: 1rem;
+}
+
+
+.location-search-box button {
+    padding: 15px 25px;
+
+    border: none;
+
+    background-color: #171717;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 0 4px 4px 0;
+}
+
+
+.location-search-box button:hover {
+    background-color: #d7b98e;
+
+    color: #171717;
+}
+
+
+#locationMessage {
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .province-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .province-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .location-search-box {
+        flex-direction: column;
+    }
+
+    .location-search-box input {
+        border-radius: 4px;
+    }
+
+    .location-search-box button {
+        margin-top: 10px;
+
+        border-radius: 4px;
+    }
+
+}
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-page {
+    background-color: #f7f6f3;
+}
+
+
+/* Purpose */
+
+.about-section {
+    padding: 90px 7%;
+}
+
+
+.about-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.about-label {
+    color: #b18d5c;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.about-text h2 {
+    font-size: 2.7rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+
+.about-text p:not(.about-label) {
+    color: #555555;
+
+    margin-bottom: 18px;
+
+    font-size: 1.05rem;
+}
+
+
+/* Process */
+
+.about-process {
+    padding: 80px 7%;
+
+    background-color: #e9e4dc;
+
+    text-align: center;
+}
+
+
+.about-process h2 {
+    font-size: 2.3rem;
+
+    margin-bottom: 45px;
+}
+
+
+.process-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.process-card {
+    background-color: white;
+
+    padding: 35px;
+
+    text-align: left;
+
+    border-radius: 8px;
+}
+
+
+.process-card span {
+    color: #b18d5c;
+
+    font-weight: bold;
+
+    font-size: 0.9rem;
+}
+
+
+.process-card h3 {
+    margin: 15px 0 10px;
+}
+
+
+.process-card p {
+    color: #666666;
+}
+
+
+/* Principles */
+
+.principles {
+    padding: 90px 7%;
+
+    text-align: center;
+}
+
+
+.principles h2 {
+    font-size: 2.3rem;
+
+    margin-bottom: 45px;
+}
+
+
+.principles-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+    text-align: left;
+}
+
+
+.principles-grid div {
+    padding: 25px;
+
+    border-left: 3px solid #d7b98e;
+}
+
+
+.principles-grid h3 {
+    margin-bottom: 8px;
+}
+
+
+.principles-grid p {
+    color: #666666;
+}
+
+
+/* Future */
+
+.future-section {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background-color: #171717;
+
+    color: white;
+}
+
+
+.future-section h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+
+.future-section p:last-child {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #cccccc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2 {
+        font-size: 2.2rem;
+    }
+
+}
+/* =========================================
+   SEARCH RESULT CARDS
+   ========================================= */
+
+.search-results h2 {
+    margin-bottom: 20px;
+}
+
+.search-summary {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-left: 4px solid #d7b98e;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-summary h3 {
+    margin-bottom: 15px;
+    color: #171717;
+}
+
+.search-summary p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.search-summary strong {
+    color: #171717;
+}
+
+.coming-soon {
+    color: #777777;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* =========================================
+   REPORT STATUS BADGE
+   ========================================= */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    margin-left: 5px;
+
+    background-color: #e9e4dc;
+
+    color: #171717;
+
+    border-radius: 20px;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+}
